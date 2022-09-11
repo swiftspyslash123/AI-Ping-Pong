@@ -16,3 +16,7 @@ body
 #start{
     font-size: 22px;
 }
+
+#instructions{
+    color: black;
+}
