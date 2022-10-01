@@ -19,6 +19,9 @@
                 <h2>AI Ping Pong Game</h2>
                 <button id="instruction" class="btn btn-succes" data-toggle="modal" data-target="#myModal">Instructions</button>
             </div>
+            <div class="copy_right_footer">
+              Developed By - Yathin Palavalasa
+            </div>
             <br><br><br>
             <button id="start" class="btn btn-danger" onclick="startGame()">Play Game!</button>
             <br><br>
@@ -28,6 +31,25 @@
 
             </div>
             
+            <br><br>
+            <button id="restart" class="btn btn-warning" onclick="restart()">Restart</button>
+            <div id="myModal" class="modal fade">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button class="close" data-dismiss="modal">&times;</button>
+                      <h4>Instructions</h4>
+                    </div>
+                    <div id="play_game_instructions">
+                        <h2>How to play the game:</h2>
+                        <br>
+                        <h4>You do a left-click on your mouse to control your red paddle and just move it up and down with the mouse. <br>Each time it hits yours or the opponent's paddle the speed will increase and the ball will go faster.<br> Click the restart button to restart the game. Good Luck!
+                    <div class="modal-body">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button id="restart" class="btn-btn warning" onclick="restart()">Restart</button>s
         </center>
         <script src="main.js"></script>
     </body>

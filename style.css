@@ -20,3 +20,14 @@ body
 #instructions{
     color: black;
 }
+
+.copy_right_footer
+{
+    position: sticky;
+    color: rgb(51, 15, 80);
+    bottom: 5;
+    width: 100%;
+    background-color: rgb(204, 149, 246);
+    line-height: 4;
+    text-align: center;
+}
