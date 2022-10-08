@@ -38,17 +38,25 @@ function modelLoaded(){
 
 function gotPoses(results){
   if(results.length > 0){
-    nosex = results[0].pose.nose.x;
-    noseY = results[0].pose.nose.y;
-    console.log("noseX = " + noseX +",noseY = " + noseY);
+    rightwristx = results[0].pose.nose.x;
+    rightwristY = results[0].pose.nose.y;
+    console.log("rightwristX = " + rightwristX +",rightwristY = " + rightwristY);
   }
 }
 
-noseX = "";
-noseY = "";
+length = [];
+rightwristX = "";
+rightwristY = "";
+score_rightwrist = 0;
 
 
 function draw(){
+
+  if(score_rightwrist > 0.2){
+    fill(230,230,250);
+    stroke(75,0,130);
+    circle(350,200, 200)
+  }
 
  background(0); 
 
