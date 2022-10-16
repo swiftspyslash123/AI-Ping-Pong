@@ -21,6 +21,12 @@ var ball = {
     dy:3
 }
 
+
+
+
+
+game_status = "";
+
 function setup(){
   var canvas =  createCanvas(700,600);
   canvas.parent('canvas');
@@ -50,9 +56,15 @@ rightwristY = "";
 score_rightwrist = 0;
 
 
+
+function startGame(){
+  game_status = "status";
+  document.getElementById("status").innerHTML = "Game Is Loaded";
+}
+
 function draw(){
 
-  if(score_rightwrist > 0.2){
+  if(game_status == "start"){
     fill(230,230,250);
     stroke(75,0,130);
     circle(350,200, 200)
